@@ -1,38 +1,498 @@
-.App {
-  text-align: center;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+  background-color: ghostwhite;
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.searchbar{
+  background-color: whitesmoke;
+  border: 0ch;
+  border-radius: 5px;
+  min-height: 44px;
+  min-width: 440px;
+  padding-left: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.adminname{
+  color: #000;
+  padding-right: 5px;
+  padding-left: 10px;
+  border-left: 1px solid rgb(77, 76, 76);
+
+}
+
+.dashboardButton{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  font-weight: 10px;
+  margin-bottom: 25px;
+}
+
+.firstbox:hover,.secondbox:hover,.thirdbox:hover,.fourthbox:hover{
+ transform: scale(0.98);
+}
+
+.fourbox{
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.firstbox{
+  display: flex;
+  border: 0px solid ;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 6px;
+  border-left: 5px solid blue;
+  width: 250px;
+  height: 100px;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.boxicon{
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+.fourboxhead{
+  color: blue;
+}
+
+.secondbox{
+  display: flex;
+  border: 0px solid ;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 6px;
+  border-left: 5px solid green;
+  width: 250px;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.fourboxhead2{
+  color: green;
+}
+
+.thirdbox{
+  display: flex;
+  border: 0px solid ;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 6px;
+  border-left: 5px solid skyblue;
+  width: 250px;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.fourboxhead3{
+  color: skyblue;
+}
+
+.fourthbox{
+  display: flex;
+  border: 0px solid ;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 6px;
+  border-left: 5px solid yellow;
+  width: 250px;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.fourboxhead4{
+  color: yellow;
+}
+
+/* .chartsheading{
+  height: 50px;
+  width: 600px;
+  border: 1px solid gainsboro;
+  color: blue;
+  padding: 10px;
+  background-color: whitesmoke;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+} */
+.line{
+  height: 50px;
+  width: 600px;
+  border: 1px solid gainsboro;
+  color: blue;
+  padding: 10px;
+  background-color: whitesmoke;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+
+.line2{
+  height: 50px;
+  width: 400px;
+  border: 1px solid gainsboro;
+  color: blue;
+  padding: 10px;
+  background-color: whitesmoke;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+
+.linechart{
+  object-fit: cover;
+  height: 400px;
+  width: 600px; 
+  border-left: 1px solid gainsboro;
+  border-right: 1px solid gainsboro;
+  border-bottom: 1px solid gainsboro;
+  padding: 10px;
+
+}
+
+.chartsrow{
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.chartsheading{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.linechart{
+  border-left: 1px solid gainsboro;
+  border-right: 1px solid gainsboro;
+  border-bottom: 1px solid gainsboro;
+  width: 600px;
+  height: 600px;
+}
+
+.Projects{
+  color: blue;
+  padding: 10px;
+  background-color: whitesmoke;
+  border-bottom:1px solid gainsboro ;
+}
+
+.projectheight{
+  border: 1px solid gainsboro;
+  height: max-content;
+  width: 500px;
+  padding-bottom: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.firstproject{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+.progress{
+  margin-left: 20px;
+  width: 450px;
+  height: 25px;
+  border-radius: 50px;
+  margin-top: 10px;
+}
+.progress::-webkit-progress-value {
+  background: red;
+  border-radius: 50px;
+}
+
+.progress::-webkit-progress-bar {
+  background: gainsboro;
+  border-radius: 50px;
+}
+
+.progress::-moz-progress-bar {
+  border-radius: 50px;
+}
+
+
+.progress1{
+  margin-left: 20px;
+  width: 450px;
+  height: 25px;
+  border-radius: 50px;
+  margin-top: 10px;
+}
+.progress1::-webkit-progress-value {
+  background: yellow;
+  border-radius: 50px;
+}
+
+.progress1::-webkit-progress-bar {
+  background: gainsboro;
+  border-radius: 50px;
+}
+
+.progress1::-moz-progress-bar {
+  border-radius: 50px;
+}
+
+.progress2{
+  margin-left: 20px;
+  width: 450px;
+  height: 25px;
+  border-radius: 50px;
+  margin-top: 10px;
+}
+.progress2::-webkit-progress-value {
+  background: blue;
+  border-radius: 50px;
+}
+
+.progress2::-webkit-progress-bar {
+  background: gainsboro;
+  border-radius: 50px;
+}
+
+.progress2::-moz-progress-bar {
+  border-radius: 50px;
+}
+
+.progress3{
+  margin-left: 20px;
+  width: 450px;
+  height: 25px;
+  border-radius: 50px;
+  margin-top: 10px;
+}
+.progress3::-webkit-progress-value {
+  background: lightblue;
+  border-radius: 50px;
+}
+
+.progress3::-webkit-progress-bar {
+  background: gainsboro;
+  border-radius: 50px;
+}
+
+.progress3::-moz-progress-bar {
+  border-radius: 50px;
+}
+
+.progress4{
+  margin-left: 20px;
+  width: 450px;
+  height: 25px;
+  border-radius: 50px;
+  margin-top: 10px;
+}
+.progress4::-webkit-progress-value {
+  background: green;
+  border-radius: 50px;
+}
+
+.progress4::-webkit-progress-bar {
+  border-radius: 50px;
+}
+
+.progress4::-moz-progress-bar {
+  border-radius: 50px;
+}
+
+.mainProjects{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+ 
+}
+
+
+
+.projectheight2{
+  border: 1px solid gainsboro;
+  height: max-content;
+  width: 550px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  padding-bottom: 18px;
+}
+
+.downimage{
+  height: 260px;
+  width: 500px;
+  padding: 10px;
+}
+
+.imgpara{
+  padding: 15px;
+}
+
+.linkpara{
+  padding: 15px;
+  color: blue;
+}
+
+.Primary{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border: 1px solid;
+  width: 245px;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #4e73df;
   color: white;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}.s{
+  color: grey;
 }
 
-.App-link {
-  color: #61dafb;
+.Success{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border: 1px solid;
+  width: 245px;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #1cc88a;
+  color: white;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Info{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border: 1px solid;
+  width: 245px;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #36b9cc;
+  color: white;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.Warning{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border: 1px solid;
+  width: 245px;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #f6c23e;
+  color: white;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.Danger{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border: 1px solid;
+  width: 245px;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #e74a3b;
+  color: white;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.Secondary{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border: 1px solid;
+  width: 245px;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #858796;
+  color: white;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}.m{
+  color: darkgray;
+}
+
+.Light{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border: 1px solid none;
+  width: 245px;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: honeydew;
+  color: grey;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.Dark{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border: 1px solid none;
+  width: 245px;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #5a5c69;
+  color: white;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.mainprimary{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+
+.totaldiv{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.last{
+  padding: 20px;
+  padding-left: 320px;
+  color: #5a5c69;
+  font-size: smaller;
+}
+
+Link{
+  color: #000;
 }
